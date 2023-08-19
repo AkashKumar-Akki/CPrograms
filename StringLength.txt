@@ -1,0 +1,14 @@
+//Write a C Program to find th length of the function
+#include<stdio.h>
+#include<string.h>
+int main(){
+    printf("Enter a string: ");
+    char String[20];
+    scanf("%s",String);
+    int count=0;
+    for(int i=0;String[i]!='\0';i++){
+        count++;
+    }
+    
+    return 0;
+}

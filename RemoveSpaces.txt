@@ -1,0 +1,17 @@
+//Write a C Program to remove the spaces from the String
+#include<stdio.h>
+int main(){
+    printf("Enter the String: ");
+    char String[50];
+    fgets(String,sizeof(String),stdin);
+    for(int i=0;String[i]!='\0';i++){
+        if(String[i]==' '){
+            for(int j=i;String[j]!='\0';j++){
+                String[j]=String[j+1];
+            }
+            i--;
+        }
+    }
+    printf("%s",String);
+    return 0;
+}

@@ -1,0 +1,19 @@
+//Write a C Program to find the sum of the digits of a number using Recursion
+#include<stdio.h>
+int Sum(int A);
+int main(){
+    printf("Enter a Number: ");
+    int N;
+    scanf("%d",&N);
+    printf("%d",Sum(N));
+    return 0;
+}
+int Sum(int A){
+    if(A!=0){
+        return A%10+Sum(A/10);
+    }
+    else{
+        return 0;
+    }
+
+}

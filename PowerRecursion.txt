@@ -1,0 +1,19 @@
+//Write a C Program to find the Power of a Number using Recursion
+#include<stdio.h>
+int main(){
+    printf("Enter Base Number: ");
+    int M;
+    scanf("%d",&M);
+    printf("Enter Power Number: ");
+    int N;
+    scanf("%d",&N);
+    printf("%d",Power(M,N));
+}
+int Power(int M ,int N){
+    if(N!=0){
+        return M*Power(M,N-1);
+    }
+    else{
+        return 1;
+    }
+}

@@ -1,0 +1,19 @@
+//Write a C Program to find the Factorial of a Number using Recursion
+#include<stdio.h>
+int Fact(int A);
+int main(){
+    printf("Enter a Number: \n");
+    int N;
+    scanf("%d",&N);
+    printf("Factorial of a Number is: %d\n",Fact(N));
+    return 0;
+}
+int Fact(int A){
+    if(A!=0){
+       return A*Fact(A-1); 
+    }
+    else{
+        return 1;
+    }
+    
+}

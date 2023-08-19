@@ -1,0 +1,20 @@
+//Write a C Program to remove the Vowels from the String
+#include<stdio.h>
+#include<string.h>
+int main(){
+    printf("Enter a String: ");
+    char String[50];
+    fgets(String, sizeof(String),stdin);
+    int len=strlen(String);
+    for(int i=0;i<len;i++){
+        if(String[i]=='A' || String[i]=='E' || String[i]=='I' || String[i]=='O' || String[i]=='U' || String[i]=='a' || String[i]=='e' || String[i]=='i' || String[i]=='o' || String[i]=='u'){
+            for(int j=i;j<len;j++){
+                String[j]=String[j+1];
+            }
+            i--;
+            len--;
+        }
+        String[len+1]='\0';
+    }
+    puts(String);
+}

@@ -1,0 +1,14 @@
+//Write a C Program to check whether it is Alphabate or Not//
+#include<stdio.h>
+int main(){
+    printf("Enter a character: ");
+    char CH;
+    scanf("%c",&CH);
+    if((CH>=65 && CH<=90) || (CH>=97 && CH<=122)){
+        printf("It's Alphabate");
+    }
+    else{
+        printf("Not an Alphabate");
+    }
+      return 0;
+}

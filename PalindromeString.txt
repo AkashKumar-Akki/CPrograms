@@ -1,0 +1,22 @@
+//Write a C Program to check whether the given string is Palindrome or not
+#include<stdio.h>
+int main(){
+    printf("Enter the String: ");
+    char String[50];
+    gets(String);
+    int flag=0;
+    int len=strlen(String);
+    for(int i=0;i<len/2;i++){
+        if(String[i]!=String[len-1-i]){
+            flag=1;
+            break;
+        }
+        
+    }
+    if(flag){
+        printf("Not a Palindrome");
+    }
+    else{
+        printf("Palindrome");
+    }
+}

@@ -1,0 +1,23 @@
+//Write a C Program to count the length of the String using Recursion
+#include<stdio.h>
+int Count(char String[], int i);
+int main(){
+    printf("Enter tha String: ");
+    char String[50];
+    scanf("%s",String);
+    int length=Count(String,0);
+    printf("%d",length);
+    return 0;
+    
+}
+int Count(char String[], int i){
+    int c=0;
+    if(String[i]=='\0'){
+        return 0;
+    }
+    else{
+        c=c+1;
+        return c+ Count(String, i=i+1);
+    
+    }
+}

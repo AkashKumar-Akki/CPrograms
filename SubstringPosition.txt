@@ -1,0 +1,25 @@
+//Write a C Program to find the position of a substring
+#include<stdio.h>
+#include<string.h>
+int main(){
+    printf("Enter Paragraph: ");
+    char para[50];
+    fgets(para,sizeof(para),stdin);
+    printf("Enter a String: ");
+    char str[10];
+    scanf("%s",str);
+    int lenp=strlen(para);
+    int len=strlen(str);
+    for(int i=0;i<lenp;i++){
+        int j;
+        for(j=0;j<len;j++){
+            if(para[i+j]!=str[j]){
+                break;
+                
+            }
+        }
+        if(j==len){
+            printf("%d-%d",i,i+len-1);
+        }
+    }
+}

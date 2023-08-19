@@ -1,0 +1,19 @@
+//Write a C Program to get the numbers from N to 1
+#include<stdio.h>
+int Upto(int A);
+int main(){
+    printf("Enter a Number: ");
+    int N;
+    scanf("%d",&N);
+    printf("%d",Upto(N));
+    return 0;
+}
+int Upto(int A){
+    if(A>1){
+        printf("%d\n",A);
+        return Upto(A-1);
+    }
+    else{
+        return 1;
+    }
+}n

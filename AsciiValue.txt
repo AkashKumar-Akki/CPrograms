@@ -1,0 +1,10 @@
+//Write a C Program to find it's ASCII value
+#include<stdio.h>
+int main(){
+    printf("Enter a character: ");
+    char CH;
+    scanf("%c",&CH);
+    int A=CH;
+    printf("%d",A);
+    return 0;
+}
